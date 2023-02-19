@@ -2386,6 +2386,23 @@ h3.agileits-icons-title {
     text-align: center;
     word-wrap: break-word;
 }
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.con-from{
+    background-color: #f5f5f5;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+.con-from input{
+    width: 100%;
+}
+.con-from button{
+    float: center;
+}
 @media (max-width:991px){
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -2409,10 +2426,16 @@ h3.agileits-icons-title {
 		margin: 0;
 	}
 }
+
 @media (max-width: 640px){
 	.icon-box {
 		float: left;
 		width: 50%;
+	}
+}
+@media (max-width: 576px){
+	.form-container{
+		flex-direction: column;
 	}
 }
 @media (max-width: 480px){
@@ -3391,3 +3414,13 @@ td.invert-image a img {
     font-size: 13px;
 }
 }
+
+#status.success {
+    background-color: green;
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+  }
